@@ -14,9 +14,6 @@ class App : Application() {
     }
 
     override fun onTerminate() {
-        // Note: onTerminate is only called on emulators, but releasing audio
-        // resources here is still correct and harmless on real devices where
-        // the OS reclaims the process directly.
         serviceLocator.soundManager.release()
         super.onTerminate()
     }

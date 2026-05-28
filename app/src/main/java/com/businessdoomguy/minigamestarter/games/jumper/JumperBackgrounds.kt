@@ -20,10 +20,6 @@ package com.businessdoomguy.minigamestarter.games.jumper
  */
 object JumperBackgrounds {
 
-    /**
-     * Map of background item id -> drawable resource name (or null when the
-     * art is not yet available and the gradient fallback should be used).
-     */
     private val resNameById: Map<String, String?> = mapOf(
         // Default background ships with real art.
         "bg_doodle_paper" to "default_bg",
@@ -35,10 +31,6 @@ object JumperBackgrounds {
         "bg_lava" to "game_bg_lava"
     )
 
-    /**
-     * Returns the drawable resource name for [backgroundId], or null if the
-     * background has no dedicated image (caller falls back to the gradient).
-     */
     fun resNameFor(backgroundId: String?): String? {
         if (backgroundId == null) return resNameById["bg_doodle_paper"]
         return resNameById[backgroundId]
