@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="14dp"
+    android:background="@drawable/item_bg"
+    android:minHeight="250dp">
+
+    <ImageView
+        android:id="@+id/itemBadgeImageView"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="10dp"
+        android:adjustViewBounds="true"
+        android:contentDescription="@string/shop_item_badge_description"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:src="@drawable/shop_skin_space_cat" />
+
+    <!-- Title -->
+    <TextView
+        android:id="@+id/itemTitleTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="14dp"
+        android:fontFamily="@font/bebas"
+        android:maxLines="2"
+        android:layout_marginTop="30dp"
+        android:shadowColor="#99000000"
+        android:shadowDx="0"
+        android:shadowDy="2"
+        android:shadowRadius="4"
+        android:textAllCaps="true"
+        android:textColor="@color/white"
+        android:textSize="38sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/itemBadgeImageView"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="packed"
+        tools:text="SPACE CAT" />
+
+    <!-- Price plate + action button share this slot -->
+    <FrameLayout
+        android:id="@+id/itemActionContainer"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="14dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/itemBadgeImageView"
+        app:layout_constraintTop_toBottomOf="@id/itemTitleTextView">
+
+        <!-- Price plate: shown when the item is NOT yet owned -->
+        <LinearLayout
+            android:id="@+id/itemPricePlate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/secondary_items_bg"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingHorizontal="18dp"
+            android:paddingVertical="10dp">
+
+            <TextView
+                android:id="@+id/itemPriceTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/bebas"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                tools:text="400" />
+
+            <ImageView
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:layout_marginStart="8dp"
+                android:contentDescription="@string/shop_coin_description"
+                android:src="@drawable/ic_coin" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/itemActionButton"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:background="@drawable/secondary_items_bg"
+            android:foreground="?attr/selectableItemBackgroundBorderless"
+            android:paddingHorizontal="22dp"
+            android:src="@drawable/ic_selected"
+            android:textColor="@color/white"
+            android:visibility="gone"
+            tools:text="USE"
+            tools:visibility="visible" />
+    </FrameLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

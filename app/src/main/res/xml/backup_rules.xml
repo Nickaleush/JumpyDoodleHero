@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Auto Backup rules (Android 6.0 - 11).
+    The Room database holds the player's coins, progress, inventory and
+    achievements, so it is included in cloud backup. Nothing sensitive is
+    stored, so a simple full-content backup is appropriate.
+-->
+<full-backup-content>
+    <include domain="database" path="mini_game_starter.db" />
+    <include domain="database" path="mini_game_starter.db-wal" />
+    <include domain="database" path="mini_game_starter.db-shm" />
+</full-backup-content>

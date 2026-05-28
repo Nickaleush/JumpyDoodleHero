@@ -1,0 +1,159 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.businessdoomguy.minigamestarter.games.jumper.JumperGameView
+        android:id="@+id/gameView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <LinearLayout
+        android:id="@+id/topHudLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top"
+        android:background="#55000000"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:paddingStart="14dp"
+        android:paddingTop="10dp"
+        android:paddingEnd="14dp"
+        android:paddingBottom="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/levelTextView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="@color/white"
+                android:textSize="28sp"
+                android:textStyle="bold"
+                android:gravity="center"
+                tools:text="Level 1" />
+
+            <ImageView
+                android:id="@+id/pauseButton"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_marginStart="12dp"
+                android:background="@drawable/bg_small_button"
+                android:minWidth="0dp"
+                android:minHeight="0dp"
+                android:padding="14dp"
+                android:src="@drawable/ic_pause"
+                android:textColor="@color/jumper_text_primary"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/heightTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                tools:text="0" />
+
+            <TextView
+                android:id="@+id/goalTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#EFFFFFFF"
+                android:layout_marginEnd="60dp"
+                android:textSize="25sp"
+                tools:text="/300m" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/controlHintTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="#33000000"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="@string/game_hint"
+        android:textColor="#EFFFFFFF"
+        android:textSize="20sp" />
+
+    <LinearLayout
+        android:id="@+id/pausePanel"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#99000000"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="28dp"
+        android:visibility="gone">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/item_bg"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="24dp">
+
+            <ImageView
+                android:id="@+id/restartButton"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/bg_small_button"
+                android:padding="17dp"
+                android:src="@drawable/ic_restart"
+                android:textColor="@color/jumper_text_primary"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toStartOf="@id/continueButton"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text="Restart" />
+
+            <ImageView
+                android:id="@+id/continueButton"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/bg_small_button"
+                android:padding="27dp"
+                android:src="@drawable/ic_play"
+                android:textColor="@color/jumper_text_primary"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toStartOf="@id/homeButton"
+                app:layout_constraintStart_toEndOf="@id/restartButton"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text="Continue" />
+
+            <ImageView
+                android:id="@+id/homeButton"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/bg_small_button"
+                android:padding="17dp"
+                android:src="@drawable/ic_home"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/continueButton"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text="Home" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
+</FrameLayout>

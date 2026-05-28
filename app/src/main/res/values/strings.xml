@@ -1,0 +1,87 @@
+<resources>
+    <!-- App -->
+    <string name="app_name">JumpyDoodle Hero</string>
+
+    <!-- Menu -->
+    <string name="menu_title">JUMPER</string>
+    <string name="menu_subtitle">Jump higher. Dodge monsters. Beat your record.</string>
+    <string name="menu_play">Play</string>
+    <string name="menu_shop">Shop</string>
+    <string name="menu_leaders">Achievements</string>
+    <string name="menu_settings">Settings</string>
+    <string name="menu_coins_format">%1$d</string>
+    <string name="menu_best_height_format">Best height: %1$d</string>
+
+    <!-- Levels -->
+    <string name="levels_title">Levels</string>
+    <string name="levels_subtitle">45 levels. The first 5 are unique, the rest reuse patterns.</string>
+    <string name="level_button_description">Level %1$d. Goal %2$d meters</string>
+    <string name="level_locked_description">Level %1$d is locked. Finish level %2$d to unlock it.</string>
+    <string name="level_locked_symbol">\uD83D\uDD12</string>
+    <string name="level_locked_toast">Finish level %1$d first</string>
+
+    <!-- Game HUD -->
+    <string name="game_level_format">Level %1$d</string>
+    <string name="game_height_format">%1$d</string>
+    <string name="game_goal_format">/%1$dm</string>
+    <string name="game_score_format">Score: %1$d</string>
+    <string name="game_shield_format">Shield: %1$d</string>
+    <string name="game_hint">Tilt the device or touch left/right to move</string>
+    <string name="game_pause">Pause</string>
+    <string name="game_pause_symbol">\u2161</string>
+    <string name="game_continue">Continue</string>
+    <string name="game_restart">Restart</string>
+    <string name="game_home">Home</string>
+    <string name="game_paused_title">Paused</string>
+
+    <!-- Result -->
+    <string name="result_passed_title">Level passed</string>
+    <string name="result_failed_title">Game Over</string>
+    <string name="result_win_subtitle">Level %1$d completed</string>
+    <string name="result_fail_subtitle">The hero fell or hit a hazard</string>
+    <string name="result_score_format">Score: %1$d</string>
+    <string name="result_height_format">Height: %1$d m</string>
+    <string name="result_reward_format">Reward: +%1$d coins</string>
+    <string name="best_score_format">Best score: %1$d</string>
+    <string name="result_next">Next</string>
+    <string name="result_replay">Replay</string>
+    <string name="result_home">Home</string>
+
+    <!-- Shop -->
+    <string name="shop_title">Shop</string>
+    <string name="shop_coins_format">%1$d</string>
+    <string name="shop_section_skins">Hero skins</string>
+    <string name="shop_section_backgrounds">Backgrounds</string>
+    <string name="shop_button_selected">Selected</string>
+    <string name="shop_button_use">Use</string>
+    <string name="shop_button_buy_format">Buy %1$d coins</string>
+    <string name="shop_message_selected">Selected</string>
+    <string name="shop_message_not_enough">Not enough coins</string>
+    <string name="shop_message_not_found">Item not found</string>
+    <string name="shop_item_badge_description">Shop item preview</string>
+    <string name="shop_coin_description">Coin</string>
+
+    <!-- Leaders -->
+    <string name="leaders_title">Achievements</string>
+    <string name="leaders_top_title">Local top-10</string>
+    <string name="leaders_empty">No records yet. Pass a level to enter the leaderboard.</string>
+    <string name="leaders_achievements_title">Achievements</string>
+    <string name="leaders_score_row_format">#%1$d   Score: %2$d</string>
+    <string name="leaders_achievement_done">DONE</string>
+    <string name="leaders_achievement_progress_format">%1$d/%2$d</string>
+    <string name="leaders_achievement_row_format">%1$s  \u2022  %2$s</string>
+
+    <!-- Settings -->
+    <string name="settings_title">Settings</string>
+    <string name="settings_sound">Sound effects</string>
+    <string name="settings_music">Music</string>
+    <string name="settings_back">Back</string>
+
+    <!-- Common -->
+    <string name="action_back">Back</string>
+    <string name="back_arrow">\u2039</string>
+
+    <!-- Splash -->
+    <string name="splash_subtitle">Jump higher. Reach the sky.</string>
+    <string name="splash_image_description">Jumper splash image</string>
+</resources>

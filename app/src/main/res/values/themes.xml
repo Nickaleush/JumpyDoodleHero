@@ -1,0 +1,29 @@
+<resources>
+    <!-- Main app theme. Window background is transparent so there is no blue
+         fill behind the fragments / MainActivity. -->
+    <style name="Theme.MiniGameStarter" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/green_primary</item>
+        <item name="colorPrimaryVariant">@color/green_primary_dark</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorSecondary">@color/jumper_button_primary</item>
+        <item name="colorOnSecondary">@color/jumper_text_primary</item>
+
+        <item name="android:statusBarColor">@color/transparent</item>
+        <item name="android:navigationBarColor">@color/transparent</item>
+
+        <!-- Transparent so no solid colour shows behind the fragments. -->
+        <item name="android:windowBackground">@android:color/transparent</item>
+
+        <item name="android:fontFamily">@font/bebas</item>
+        <item name="fontFamily">@font/bebas</item>
+    </style>
+
+    <!-- Launch theme for the Android system splash screen (AndroidX SplashScreen,
+         backported to API 23+). Uses a GREEN background instead of blue. The
+         activity swaps to Theme.MiniGameStarter in onCreate via installSplashScreen(). -->
+    <style name="Theme.MiniGameStarter.Splash" parent="Theme.SplashScreen">
+        <item name="windowSplashScreenBackground">@color/green_primary</item>
+        <item name="windowSplashScreenAnimatedIcon">@mipmap/ic_launcher</item>
+        <item name="postSplashScreenTheme">@style/Theme.MiniGameStarter</item>
+    </style>
+</resources>

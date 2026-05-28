@@ -1,0 +1,175 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_jumper_menu">
+
+    <LinearLayout
+        android:id="@+id/coinPlate"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/secondary_items_bg"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingStart="14dp"
+        android:paddingTop="6dp"
+        android:paddingEnd="14dp"
+        android:paddingBottom="6dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/coinTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/bebas"
+            android:gravity="center_vertical|end"
+            android:maxLines="1"
+            android:minWidth="64dp"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            tools:text="1000000" />
+
+        <ImageView
+            android:id="@+id/coinsIcon"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginStart="6dp"
+            android:src="@drawable/ic_coin" />
+    </LinearLayout>
+
+
+    <ImageView
+        android:id="@+id/titleTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="96dp"
+        android:scaleType="centerCrop"
+
+        android:src="@mipmap/ic_launcher_foreground"
+        android:text="@string/menu_title"
+        android:textColor="@color/white"
+        android:textSize="48sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <FrameLayout
+        android:id="@+id/menuCardLayout"
+        android:layout_width="0dp"
+        android:layout_height="210dp"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="34dp"
+        android:background="@drawable/item_bg"
+        android:elevation="8dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/titleTextView">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/playButton"
+                android:layout_width="wrap_content"
+                android:layout_height="58dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/secondary_items_bg"
+                android:fontFamily="@font/bebas"
+                android:gravity="center"
+                android:letterSpacing="0.1"
+                android:text="@string/menu_play"
+                android:textAllCaps="true"
+                android:textColor="@color/white"
+                android:textSize="35sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/shopButton"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:layout_marginTop="14dp"
+                android:background="@drawable/bg_small_button"
+                android:padding="11dp"
+                android:src="@drawable/ic_shopping_cart"
+                android:textAllCaps="false"
+                android:textColor="@color/jumper_text_primary"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/playButton" />
+
+            <ImageView
+                android:id="@+id/leadersButton"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:layout_marginTop="14dp"
+                android:background="@drawable/bg_small_button"
+                android:padding="17dp"
+                android:src="@drawable/ic_leaderboard"
+                android:text="@string/menu_leaders"
+                android:textAllCaps="false"
+                android:textColor="@color/jumper_text_primary"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toStartOf="@+id/settingsButton"
+                app:layout_constraintStart_toEndOf="@+id/shopButton"
+                app:layout_constraintTop_toBottomOf="@+id/playButton" />
+
+            <ImageView
+                android:id="@+id/settingsButton"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/bg_small_button"
+                android:padding="17dp"
+                android:src="@drawable/ic_settings"
+                android:text="@string/menu_settings"
+                android:textAllCaps="false"
+                android:textColor="@color/jumper_text_primary"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/playButton" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </FrameLayout>
+
+    <ImageView
+        android:id="@+id/platformImage"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginBottom="-80dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/platform_simple"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/heroImage"
+        android:layout_width="200dp"
+        android:layout_height="220dp"
+        android:layout_marginEnd="20dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/hero_doodle_boy"
+        android:translationY="60dp"
+        app:layout_constraintBottom_toTopOf="@id/platformImage"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

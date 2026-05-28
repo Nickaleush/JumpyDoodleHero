@@ -1,0 +1,22 @@
+<resources>
+    <color name="jumper_bg_top">#4FC3F7</color>
+    <color name="jumper_bg_bottom">#1976D2</color>
+    <color name="jumper_surface">#FFFFFF</color>
+    <color name="jumper_surface_soft">#E3F2FD</color>
+    <color name="jumper_text_primary">#16324F</color>
+    <color name="jumper_text_secondary">#5B6F82</color>
+    <color name="jumper_button_primary">#FFB300</color>
+    <color name="jumper_button_primary_dark">#F57C00</color>
+    <color name="jumper_button_secondary">#FFFFFF</color>
+    <color name="jumper_coin">#FFC107</color>
+    <color name="transparent">#00000000</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="green_primary">#47c812</color>
+    <color name="green_primary_dark">#114d06</color>
+    <color name="jumper_primary">#1976D2</color>
+    <color name="jumper_primary_dark">#0D47A1</color>
+    <color name="purple_500">#1976D2</color>
+    <color name="purple_700">#0D47A1</color>
+    <color name="surface_soft">#E3F2FD</color>
+</resources>
