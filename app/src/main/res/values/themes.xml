@@ -8,10 +8,9 @@
         <item name="colorSecondary">@color/jumper_button_primary</item>
         <item name="colorOnSecondary">@color/jumper_text_primary</item>
 
-        <item name="android:statusBarColor">@color/transparent</item>
-        <item name="android:navigationBarColor">@color/transparent</item>
+        <item name="android:statusBarColor">@color/splash_background</item>
+        <item name="android:navigationBarColor">@color/splash_background</item>
 
-        <!-- Transparent so no solid colour shows behind the fragments. -->
         <item name="android:windowBackground">@android:color/transparent</item>
 
         <item name="android:fontFamily">@font/bebas</item>
