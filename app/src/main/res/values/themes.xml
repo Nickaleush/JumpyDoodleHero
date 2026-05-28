@@ -22,7 +22,7 @@
          backported to API 23+). Uses a GREEN background instead of blue. The
          activity swaps to Theme.MiniGameStarter in onCreate via installSplashScreen(). -->
     <style name="Theme.MiniGameStarter.Splash" parent="Theme.SplashScreen">
-        <item name="windowSplashScreenBackground">@color/green_primary</item>
+        <item name="windowSplashScreenBackground">@color/splash_background</item>
         <item name="windowSplashScreenAnimatedIcon">@mipmap/ic_launcher</item>
         <item name="postSplashScreenTheme">@style/Theme.MiniGameStarter</item>
     </style>
